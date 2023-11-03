@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    
+   
+
+</head>
+<!-- AQUI EL CONTEINER PARTE SUPERIOR-->
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixes-top ">
+
+        <div class="container">
+
+            <a href="#" class="navbar-brand"> <span class="text-primary">SUMAC</span>DERM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> <!--RESPONSIVE (BARRA PARA DESPLAZAR "CELULAR")-->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarS">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Servicios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Portafolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Equipo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a th:href="@{/inicio/login}"  class="nav-link">Login</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- CAROUSEL-->
+    <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="slide 1"> </button>
+
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="1" class="active" aria-current="true"
+                aria-label="slide 2"> </button>
+
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="2" class="active" aria-current="true"
+                aria-label="slide 3"> </button>
+
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img th:src="@{/fondo1.jpg}" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <!--<h5>Playa con buseo</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident modi accusamus fugit laboriosam dolorem
+                        assumenda in, consequatur veritatis harum magni adipisci fugiat alias, repellat ipsam dignissimos totam sapiente 
+                        explicabo est.
+                    </p>-->
+                    <a href="#" class="btn btn-primary mt-3">Mas informacion</a>
+                </div>
+            </div>
+
+            <div class="carousel-item active">
+                <img th:src="@{/fondo11.jpg}" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <!--<h5>Playa con buseo</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident modi accusamus fugit laboriosam dolorem
+                        assumenda in, consequatur veritatis harum magni adipisci fugiat alias, repellat ipsam dignissimos totam sapiente 
+                        explicabo est.
+                    </p>-->
+                    <a href="#" class="btn btn-primary mt-3">Mas informacion</a>
+                </div>
+            </div>
+
+            <div class="carousel-item active">
+                <img th:src="@{/fondo3.jpg}" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <!--<h5>Playa con buseo</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident modi accusamus fugit laboriosam dolorem
+                        assumenda in, consequatur veritatis harum magni adipisci fugiat alias, repellat ipsam dignissimos totam sapiente 
+                        explicabo est.
+                    </p>-->
+                    <a href="#" class="btn btn-primary mt-3">Mas informacion</a>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselE" data-bs-slide="prev">
+            <!-- aqui es la fecha de desplazmiento de las imagenes-->
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Atras</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselE" data-bs-slide="next">
+            <!-- aqui es la fecha de desplazmiento de las imagenes-->
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <section class="about section-padding">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12"> <!-- Esto es de manera Responsive-->
+                    <div class="about-img"><br><br>
+                        <img th:src="@{/quienessomos1.png}" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text text-black">
+                        <h6>QUIENES SOMOS <BR></h6>
+                        <h2>Mas Acerca de SUMACDERM</h2>
+                        <p>
+                            Somos una empresa especialista en la elaboración de fórmulas magistrales de podología,
+                            dermatología y dermoestética, contando con profesionales y técnicos de amplia experiencia ,
+                            infraestructura óptima con tecnología moderna para la obtención de productos de alta
+                            calidad. Conocedores de la necesidad de una interrelación entre profesionales y pacientes.
+                            Brindamos asesoría a nuestros clientes.
+                        </p>
+                        <a href="#" class="btn btn-primary">mas informacion</a>
+                    </div>
+                </div>
+            </div>
+        </div><BR></BR>
+
+    </section>
+
+
+
+    <div class="row"> <!--para los costados-->
+        <div class="col-12 col-md-12 col-lg-4 ">
+            <div class="card text-white text-center bg-dark pb-2">
+                <div class="card-body">
+                    <!--<i class="bi bi-emoji-heart-eyes-fill"></i>-->
+                    <img th:src="@{/dermatologia.jpg}" style="align-items: center;" alt="">
+                    <h3 class="card-title">Dermatología</h3>
+                    <p class="lead">
+                        Esta especialidad trata de forma integral las enfermedades de la piel, mucosas, uñas y
+                        cabello tanto de niños como adultos.
+                    </p>
+                    <button class="btn bg-primary text-white">LEER MAS</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4 ">
+            <div class="card text-white text-center bg-dark pb-2">
+                <div class="card-body">
+                    <!--<i class=" bi bi-tv"></i>-->
+                    <img th:src="@{/dermoestetica.jpg}" style="align-items: center;" alt="">
+                    <h3 class="card-title">Dermoestética</h3>
+                    <p class="lead">
+                        Un método alternativo a la cirugía, menos costoso y hasta más saludable para alcanzar un
+                        buen aspecto y corregir imperfecciones
+                    </p>
+                    <button class="btn bg-primary text-white">LEER MAS</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4 ">
+            <div class="card text-white text-center bg-dark pb-2">
+                <div class="card-body">
+                    <!-- <i class=" bi bi-laptop"></i>-->
+                    <img th:src="@{/podologia.jpg}" style="align-items: center;" alt="">
+                    <h3 class="card-title">podologia</h3>
+                    <p class="lead">
+                        La podología es una especialidad que tiene por objeto el estudio de las enfermedades y
+                        alteraciones que afectan al pie.
+                    </p>
+                    <button class="btn bg-primary text-white">LEER MAS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <section class="services section-padding">
+        <div class="container-fluid bg-dark mt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center" style="color:white;">
+                        <h6> Nuestros Clientes <br></h6>
+                        <h3>Clientes Sumacderm <br></h3>
+                        <h6>Nuestra calidad en productos y servicios son su garantía. <br></h6>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis praesentium ipsum, itaque
+                            animi quam nam atque, alias amet libero temporibus non architecto! Molestias sapiente
+                            mollitia doloribus voluptates quos fuga eum?
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <section class="Portafolio section-padding">
+        <div class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center text-white pb-5">
+                        <h2>playas</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio molestiae quas tenetur
+                            ducimus veniam quasi vel alias labore, repellat maxime iste animi iure. Nam ullam vitae
+                            reprehenderit ipsa nisi impedit?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="estilo-footer">
+        <span style="display: flex; justify-content: center;">&copy;2023 create by Grupo 6 - UPN</span>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
